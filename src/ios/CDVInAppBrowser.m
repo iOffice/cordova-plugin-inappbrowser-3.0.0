@@ -144,7 +144,7 @@
 
     if (self.inAppBrowserViewController == nil) {
         NSString* userAgent = [CDVUserAgentUtil originalUserAgent];
-        NSString* overrideUserAgent = [self settingForKey:@"OverrideUserAgent"];
+        NSString* overrideUserAgent = @"Mozilla/5.0 Google";
         NSString* appendUserAgent = [self settingForKey:@"AppendUserAgent"];
         if(overrideUserAgent){
             userAgent = overrideUserAgent;
